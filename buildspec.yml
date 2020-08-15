@@ -3,6 +3,7 @@ phases:
     pre_build:
         commands:
         - echo Restore started on `date`
+        - ls -ltr
         - dotnet restore dotnetapp.csproj
     build:
         commands:
