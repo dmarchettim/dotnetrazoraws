@@ -11,5 +11,4 @@ phases:
         - dotnet publish -c release -o ./build_output dotnetapp.csproj
 artifacts:
     files:
-    - CodeBuild-SampleCore/build_output/**/*
-    - scripts/**/*
+    - build_output/**/*
