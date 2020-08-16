@@ -1,14 +1,14 @@
 version: 0.2
 phases:
-    pre_build:
+    build:
         commands:
         - echo Restore started on `date`
         - ls -ltr
         - dotnet restore dotnetapp.csproj
-    build:
-        commands:
         - echo Build started on `date`
-        - dotnet publish -c release -o ./build_output dotnetapp.csproj
+        - dotnet build dotnetapp.csproj
+        - dotnet publish dotnetapp.csproj -o site
 artifacts:
     files:
-    - build_output/**/*
+    - site/**/*
+    - aws-windows-deployment-manifest.json

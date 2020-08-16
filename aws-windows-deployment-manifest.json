@@ -5,7 +5,7 @@
             {
                 "name": "Testerazordimarmeviacli",
                 "parameters": {
-                    "appBundle": ".",
+                    "appBundle": "./site",
                     "iisPath": "/",
                     "iisWebSite": "Default Web Site"
                 }
