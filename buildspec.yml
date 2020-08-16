@@ -7,7 +7,7 @@ phases:
         - dotnet restore dotnetapp.csproj
         - echo Build started on `date`
         - dotnet build dotnetapp.csproj
-        - dotnet publish dotnetapp.csproj -o site
+        - dotnet publish -c release dotnetapp.csproj -o site
 artifacts:
     files:
     - site/**/*
