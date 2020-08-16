@@ -12,3 +12,5 @@ artifacts:
     files:
     - site/**/*
     - aws-windows-deployment-manifest.json
+    - appspec.yml
+    - installApp.sh
