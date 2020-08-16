@@ -14,4 +14,3 @@ artifacts:
     - aws-windows-deployment-manifest.json
     - appspec.yml
     - installApp.sh
-    - **/*
